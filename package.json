@@ -1,0 +1,26 @@
+{
+  "name": "cat-fact-block",
+  "version": "1.0.0",
+  "description": "A Gutenberg block that displays a random cat fact",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode=production",
+    "dev": "webpack --watch",
+    "wp-pot": "wp-pot --src  '*.php' --dest-file 'languages/cat-fact-block.pot' --domain 'cat-fact-block'"
+  },
+  "author": "carrieforde <carrie@carrieforde.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11",
+    "wp-pot-cli": "^1.3.0"
+  },
+  "dependencies": {
+    "cat-fact-component": "^1.0.0"
+  }
+}
